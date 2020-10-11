@@ -1,0 +1,22 @@
+@import '~normalize.css';
+
+// body,html{margin:0;padding:0;height:100%;}
+body{
+  background:#ffffff;
+ // box-shadow: inset 0 0 20vmin 0 #ffffff;
+ //  overflow-x: hidden;
+ // overflow-y: hidden;
+}
+.wrap{
+  position:relative;
+  width:80vmin; height:80vmin;
+  margin:0 auto;
+  background:inherit;
+  -webkit-transform:scale(0.2) translatez(0px);
+          transform:scale(0.2) translatez(0px);
+  opacity:0;
+  -webkit-transition:opacity .5s, -webkit-transform .5s;
+  transition:opacity .5s, -webkit-transform .5s;
+  transition:transform .5s, opacity .5s;
+  transition:transform .5s, opacity .5s, -webkit-transform .5s;
+}
