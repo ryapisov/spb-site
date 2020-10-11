@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { HashRouter as Router } from 'react-router-dom'
+import Routes from 'routes'
 
 const App = () => {
   return (
-    <div>
+    <Router>
       Электрик СПБ
-    </div>
+      <Routes />
+    </Router>
   )
 }
 
